@@ -163,3 +163,19 @@ let result4 = ninjas.push('ken'); //this pushes a new value and logs out the new
 let result = ninjas.pop('beeb'); //takes off the last value and changes the array
 
 console.log(result);
+
+================================================
+
+// undefined
+
+let age;  // unassigned will result to undefined
+
+console.log(age, age + 3, `the age is ${age}`);  // this will output undefined, NaN `the age is undefined` cuz it has not been assigned a value
+
+ 
+// null
+
+let age1 = null; //explicitlly declaring as null
+
+console.log(age1, age1 + 3, `the age is ${age1}`); // result will be null
+
