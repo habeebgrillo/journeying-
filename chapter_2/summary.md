@@ -15,7 +15,7 @@ console.log(points);
 var score = 75;
 console.log(score);
 
-========
+======================================================================
 
 2. Strings
 
@@ -125,7 +125,41 @@ let result = `The blog called ${title} by ${author} has ${likes} likes`;
 // creating html templates
 let html = `
     <h2>${title}</h2>
-    <p>By ${authour}</p>
+    <p>By ${author}</p>
     <span>This blog has ${likes} likes</span>
 `;
 
+==================================================================
+
+
+// arrays
+
+let ninjas = ['shawn', 'ryu', 'chun-li'];
+
+
+ninjas[1] = 'ken'; // this is going to re-assign the value on the index
+console.log(ninjas[1])
+
+let ages = [20, 21, 24, 35];
+console.log(ages[2]); // this also works on numbers
+
+let random = ['shawn', 'men', 30, 45] //it is also possible to include numbers and strings in an array
+console.log(random);
+
+
+
+console.log(ninjas.length);  // this will check the length of the array
+
+// array methods
+
+let result1 = ninjas.join(',');  // takes an array and joins with whatever was supplied and puts it in-between the arrays
+
+let result2 = ninjas.indexOf('chun-li'); // finds the index of the element that was supplied
+
+let result3 = ninjas.concat(['ben', 'crystal']); // joining an array into another array
+
+let result4 = ninjas.push('ken'); //this pushes a new value and logs out the new length into the array ()
+
+let result = ninjas.pop('beeb'); //takes off the last value and changes the array
+
+console.log(result);
